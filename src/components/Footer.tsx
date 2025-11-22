@@ -102,16 +102,17 @@ export default function Footer({ onNavigate }: FooterProps) {
                   <social.icon size={18} />
                 </a>
               ))}
-              <a
-                href="https://bark.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white hover:text-[#2563eb] transition-colors text-sm"
-                style={{ fontFamily: 'Inter, sans-serif' }}
-              >
-                bark.com
-              </a>
-            </div>
+  {/* bark.com link on second line */}
+  <a
+    href="https://bark.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-white hover:text-[#2563eb] transition-colors text-sm"
+    style={{ fontFamily: 'Inter, sans-serif' }}
+  >
+    bark.com
+  </a>
+</div>
           </div>
         </div>   
 
