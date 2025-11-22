@@ -115,7 +115,7 @@ export default function Footer({ onNavigate }: FooterProps) {
   <img
     src="/bark.png"
     alt="bark.com"
-    className="h-10 w-24"
+    className="h-10 w-22"
   />
 </a>
           </div>
