@@ -85,25 +85,23 @@ export default function Footer({ onNavigate }: FooterProps) {
             </ul>
           </div>
 
-<div>
-  <h3 className="text-xl font-bold text-[#f1f5f9] mb-3">
-    Connect
-  </h3>
-  {/* Icons row */}
-  <div className="flex gap-4 items-center mb-2">
-    {socialLinks.map((social) => (
-      <a
-        key={social.label}
-        href={social.href}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="w-10 h-10 rounded-full bg-[#1e293b] flex items-center justify-center text-[#94a3b8] hover:text-[#2563eb] hover:bg-[#1e3a8a] transition-all"
-        aria-label={social.label}
-      >
-        <social.icon size={18} />
-      </a>
-    ))}
-  </div>
+          <div>
+            <h3 className="text-xl font-bold text-[#f1f5f9] mb-3">
+              Connect
+            </h3>
+            <div className="flex gap-4 items-center">
+              {socialLinks.map((social) => (
+                <a
+                  key={social.label}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full bg-[#1e293b] flex items-center justify-center text-[#94a3b8] hover:text-[#2563eb] hover:bg-[#1e3a8a] transition-all"
+                  aria-label={social.label}
+                >
+                  <social.icon size={18} />
+                </a>
+              ))}
   {/* bark.com link on second line */}
   <a
     href="https://bark.com"
