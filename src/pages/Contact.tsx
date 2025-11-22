@@ -101,7 +101,7 @@ export default function Contact({ onNavigate }: ContactProps) {
           </form>
 
 <p className="text-[#94a3b8] text-sm text-center mt-6">
-  Reach out to us directly at{' '}
+  Or reach out to us directly at{' '}
   <a
     href="https://mail.google.com"
     target="_blank"
