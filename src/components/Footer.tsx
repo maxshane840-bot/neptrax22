@@ -44,7 +44,8 @@ export default function Footer({ onNavigate }: FooterProps) {
               href="https://gmail.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex justify-start text-[#94a3b8] hover:text-[#2563eb] text-sm transition-colors">
+              className="flex justify-start text-[#94a3b8] hover:text-[#2563eb] text-sm transition-colors"
+            >
               info@neptrex.com
             </a>
           </div>
@@ -89,7 +90,8 @@ export default function Footer({ onNavigate }: FooterProps) {
             <h3 className="text-xl font-bold text-[#f1f5f9] mb-3">
               Connect
             </h3>
-            <div className="flex gap-4 items-center">
+            {/* Icons in flex row */}
+            <div className="flex gap-4 items-center mb-2">
               {socialLinks.map((social) => (
                 <a
                   key={social.label}
@@ -102,19 +104,19 @@ export default function Footer({ onNavigate }: FooterProps) {
                   <social.icon size={18} />
                 </a>
               ))}
-  {/* bark.com link on second line */}
-  <a
-    href="https://bark.com"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="text-white hover:text-[#2563eb] transition-colors text-sm"
-    style={{ fontFamily: 'Inter, sans-serif' }}
-  >
-    bark.com
-  </a>
-</div>
+            </div>
+            {/* bark.com link on its own line */}
+            <a
+              href="https://bark.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-[#2563eb] transition-colors text-sm block"
+              style={{ fontFamily: 'Inter, sans-serif' }}
+            >
+              bark.com
+            </a>
           </div>
-        </div>   
+        </div>
 
         <div className="border-t border-white/8 pt-8 flex flex-col items-center justify-center text-center">
           <p className="text-[#94a3b8] text-sm">
