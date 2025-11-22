@@ -113,7 +113,7 @@ export default function Footer({ onNavigate }: FooterProps) {
   className="block mt-2"
 >
   <img
-    src="/bark copy.png"
+    src="/bark.png"
     alt="bark.com"
     className="h-6 w-auto"
   />
