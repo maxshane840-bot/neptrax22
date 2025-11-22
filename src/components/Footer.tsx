@@ -22,7 +22,6 @@ export default function Footer({ onNavigate }: FooterProps) {
   const socialLinks = [
     { icon: Twitter, href: 'https://x.com', label: 'Twitter' },
     { icon: Instagram, href: 'https://instagram.com', label: 'Instagram' },
-    { type: 'image', src: '/bark copy.png', href: 'https://bark.com', label: 'Bark' },
   ];
 
   return (
@@ -90,7 +89,7 @@ export default function Footer({ onNavigate }: FooterProps) {
             <h3 className="text-xl font-bold text-[#f1f5f9] mb-3">
               Connect
             </h3>
-            <div className="flex gap-4">
+            <div className="flex gap-4 items-center">
               {socialLinks.map((social) => (
                 <a
                   key={social.label}
@@ -100,13 +99,18 @@ export default function Footer({ onNavigate }: FooterProps) {
                   className="w-10 h-10 rounded-full bg-[#1e293b] flex items-center justify-center text-[#94a3b8] hover:text-[#2563eb] hover:bg-[#1e3a8a] transition-all"
                   aria-label={social.label}
                 >
-                  {social.type === 'image' ? (
-                    <img src={social.src} alt={social.label} className="w-5 h-5 object-contain" />
-                  ) : (
-                    <social.icon size={18} />
-                  )}
+                  <social.icon size={18} />
                 </a>
               ))}
+              <a
+                href="https://bark.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:text-[#2563eb] transition-colors text-sm"
+                style={{ fontFamily: 'Inter, sans-serif' }}
+              >
+                bark.com
+              </a>
             </div>
           </div>
         </div>   
