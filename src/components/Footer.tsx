@@ -110,7 +110,7 @@ export default function Footer({ onNavigate }: FooterProps) {
               href="https://bark.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:text-[#2563eb] transition-colors text-xl block"
+              className="text-gray hover:text-[#2563eb] transition-colors text-xl block"
               style={{ fontFamily: 'Work Sans, sans-serif' }}
             >
               bark.com
