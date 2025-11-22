@@ -109,7 +109,7 @@ export default function Contact({ onNavigate }: ContactProps) {
     className="text-[#2563eb] hover:underline"
   >
     info@neptrax.com
-  </a>.
+  </a>
 </p>
         </div>
 
