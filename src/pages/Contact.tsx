@@ -100,9 +100,17 @@ export default function Contact({ onNavigate }: ContactProps) {
             </button>
           </form>
 
-          <p className="text-[#94a3b8] text-sm text-center mt-6">
-            Reach out to us directly at info@neptrax.com.
-          </p>
+<p className="text-[#94a3b8] text-sm text-center mt-6">
+  Reach out to us directly at{' '}
+  <a
+    href="https://mail.google.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-[#2563eb] hover:underline"
+  >
+    info@neptrax.com
+  </a>.
+</p>
         </div>
 
         <div className="bg-gradient-to-r from-[#0f172a] to-[#1e3a8a] rounded-2xl p-8 text-center">
